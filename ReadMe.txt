@@ -2,6 +2,8 @@
     APPLICATION : forms2 Project Overview
 ========================================================================
 
+Visual Studio 2010 Version
+
 AppWizard has created this forms2 Application for you.  
 
 An error has occurred. Please reinstall Windows for more information. 
