@@ -6,6 +6,7 @@
 #include "ImageData.h"
 #include "SencamDriver.h"
 #include "WinXDriver.h"
+#include "TestDriver.h"
 //#include "SC2Driver.h"
 
 //#include "cam_types.h"
@@ -24,8 +25,9 @@ namespace forms2{
 		
 		singleFrame = f->isSingleFrame();
 		camSet = new CameraSettings();
-		//driver = (Driver *) new SencamDriver();
-		driver = (Driver ^) gcnew SencamDriver();//Driver REF
+		//driver = (Driver *) new SencamDriver(); --old, now use ref class
+		//driver = (Driver ^) gcnew SencamDriver();//Driver REF
+		driver = (Driver ^) gcnew TestDriver();//Driver REF
 		//driver = nullptr; 
 		continueLock = gcnew String("");
 		interruptLock = gcnew String("");
