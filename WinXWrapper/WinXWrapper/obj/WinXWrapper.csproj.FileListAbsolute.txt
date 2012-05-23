@@ -1,0 +1,16 @@
+C:\Simplicio\forms2.2\WinXWrapper\WinXWrapper\bin\Debug\WinXWrapper.dll
+C:\Simplicio\forms2.2\WinXWrapper\WinXWrapper\bin\Debug\WinXWrapper.pdb
+C:\Simplicio\forms2.2\WinXWrapper\WinXWrapper\obj\Debug\ResolveAssemblyReference.cache
+C:\Simplicio\forms2.2\WinXWrapper\WinXWrapper\obj\Debug\WinXWrapper.dll
+C:\Simplicio\forms2.2\WinXWrapper\WinXWrapper\obj\Debug\WinXWrapper.pdb
+C:\Simplicio\forms2.2\WinXWrapper\WinXWrapper\bin\Debug\Interop.KINETICSTOFRAMESLib.dll
+C:\Simplicio\forms2.2\WinXWrapper\WinXWrapper\bin\Debug\Interop.VBA.dll
+C:\Simplicio\forms2.2\WinXWrapper\WinXWrapper\bin\Debug\Interop.WINX32Lib.dll
+C:\Simplicio\forms2.2\WinXWrapper\WinXWrapper\bin\Release\WinXWrapper.dll
+C:\Simplicio\forms2.2\WinXWrapper\WinXWrapper\bin\Release\WinXWrapper.pdb
+C:\Simplicio\forms2.2\WinXWrapper\WinXWrapper\bin\Release\Interop.KINETICSTOFRAMESLib.dll
+C:\Simplicio\forms2.2\WinXWrapper\WinXWrapper\bin\Release\Interop.VBA.dll
+C:\Simplicio\forms2.2\WinXWrapper\WinXWrapper\bin\Release\Interop.WINX32Lib.dll
+C:\Simplicio\forms2.2\WinXWrapper\WinXWrapper\obj\Release\ResolveAssemblyReference.cache
+C:\Simplicio\forms2.2\WinXWrapper\WinXWrapper\obj\Release\WinXWrapper.dll
+C:\Simplicio\forms2.2\WinXWrapper\WinXWrapper\obj\Release\WinXWrapper.pdb

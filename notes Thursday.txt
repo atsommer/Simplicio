@@ -1,0 +1,20 @@
+Installing pixelfy.usb
+installed on Elder
+steps:
+install camera driver
+install sdk
+
+in visual studio 2005
+add additional include directory and
+additional library directory
+drop SDK dlls into windows/system
+
+buffers
+a buffer is allocated in the SDK and you get an index.
+and a pointer to it
+there can be up to 8 buffers
+
+error: sBufNr still = -1?
+
+SDK DLL error 800a300c at device 'camera sdk dll':
+the buffer nr is out of range
