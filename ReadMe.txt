@@ -3,7 +3,9 @@
 ========================================================================
 
 AppWizard has created this forms2 Application for you.  
-Ariel Founded Microsoft
+
+An error has occurred. Please reinstall Windows for more information. 
+
 This file contains a summary of what you will find in each of the files that
 make up your forms2 application.
 
