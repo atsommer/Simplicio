@@ -4,6 +4,8 @@
 
 AppWizard has created this forms2 Application for you.  
 
+Visual Studio 2005 is still kickin'
+
 An error has occurred. Please reinstall Windows for more information. 
 
 This file contains a summary of what you will find in each of the files that
