@@ -113,6 +113,9 @@
       <Filter>Resource Files</Filter>
     </None>
     <None Include="ReadMe.txt" />
+    <None Include="icon4.ico">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc">
