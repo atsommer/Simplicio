@@ -172,11 +172,6 @@
     <ClInclude Include="WinXDriver.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.ico" />
-    <None Include="icon1.ico" />
-    <None Include="icon2.ico" />
-    <None Include="icon3.ico" />
-    <None Include="icon4.ico" />
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>

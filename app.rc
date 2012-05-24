@@ -19,19 +19,6 @@
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 #pragma code_page(1252)
 
-/////////////////////////////////////////////////////////////////////////////
-//
-// Icon
-//
-
-// Icon with lowest ID value placed first to ensure application icon
-// remains consistent on all systems.
-IDI_ICON4               ICON                    "icon4.ico"
-IDI_ICON0               ICON                    "app.ico"
-IDI_ICON1               ICON                    "icon1.ico"
-IDI_ICON2               ICON                    "icon2.ico"
-IDI_ICON3               ICON                    "C:\\simplicio\\Simplicio.git\\icon3.ico"
-
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
 //
