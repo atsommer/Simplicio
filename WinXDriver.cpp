@@ -27,16 +27,21 @@ namespace forms2{
 			//closes all opened windows
 		}
 		*/
-		
-		objExp->Start(objDoc1);
-		objExp->Stop();
-		
-		//Store current parameters to detect changes later
-		prevRows = getRows();
-		prevCols = getCols();
-		prevVbin = vbin;
-		prevHbin = hbin;
-		return 0;
+		int err=0;
+		try{
+			objExp->Start(objDoc1);
+			objExp->Stop();
+		}catch (System::Runtime::InteropServices::COMException ^e){
+			err = 1;		
+		}
+		if (!err){
+			//Store current parameters to detect changes later
+			prevRows = getRows();
+			prevCols = getCols();
+			prevVbin = vbin;
+			prevHbin = hbin;
+		}
+		return err;
 	}
 
 	int WinXDriver::openCameraDialog()
@@ -48,7 +53,10 @@ namespace forms2{
 	}
 	void WinXDriver::closeCamera()
 	{
-		objDoc1->Close();
+		if (objDoc1 != nullptr)
+		try{
+			objDoc1->Close();
+		}catch (System::Runtime::InteropServices::COMException ^){;}
 	}
 	void WinXDriver::expose()
 	{
