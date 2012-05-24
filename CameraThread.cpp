@@ -45,10 +45,9 @@ namespace forms2{
 		return driver->getDriverName();
 	}
 	int CameraThread::changeCamera(String^ camname){
-		
-		if (running)
+		if (running || camname->Equals(driver->getDriverName()))
 			return CAM_NOT_CHANGED;
-
+		
 		Driver^ newdriver=nullptr;//Driver REF
 		
 		if (camname->Equals(gcnew String(L"Sensicam"))){
@@ -59,22 +58,27 @@ namespace forms2{
 			//newdriver = (Driver ^)gcnew SC2Driver();//Driver REF
 			MessageBox::Show("Pixelfly not yet supported.","Simplicio",MessageBoxButtons::OK);
 		}else if (camname->Equals(gcnew String(L"Princeton Instruments (WinView)"))){
+//			MessageBox::Show("Attempt PI","Simplicio",MessageBoxButtons::OK);
 			try{
-			newdriver = (Driver ^)gcnew WinXDriver();
-			}catch (Exception ^e){
+				//MessageBox::Show("Attempt PI","Simplicio",MessageBoxButtons::OK);
+				newdriver = (Driver ^)gcnew WinXDriver();
+				//MessageBox::Show("Executed Constructor","Simplicio",MessageBoxButtons::OK);
+			}catch (Exception ^){
 				newdriver=nullptr;
 				MessageBox::Show("Couldn't connect to WinView.","Simplicio",MessageBoxButtons::OK);
 			}
 		}else{
 			MessageBox::Show("Unsupported camera type requested.","Simplicio",MessageBoxButtons::OK);
 		}
-
+		
 		if (newdriver != nullptr){
 			//requested camera is one of the supported types
 			driver->closeCamera();		
+			
 			//Driver* oldDriver = driver;
 			//driver=newdriver;
 			int err = newdriver->initCamera();
+			
 			if (err){
 				MessageBox::Show("Error initializing camera.","Simplicio",MessageBoxButtons::OK);
 				newdriver->closeCamera();

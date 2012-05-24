@@ -285,7 +285,8 @@ namespace forms2{
 			return;//already using this camera
 		int err = camThread->changeCamera(cameraListBox->SelectedItem->ToString());
 		String ^camname = gcnew String(camThread->getCameraDriverName());
-		cameraListBox->SetSelected(cameraListBox->FindStringExact(camname),1);
+		//cameraListBox->SetSelected(cameraListBox->FindStringExact(camname),1);
+		cameraListBox->SelectedIndex = cameraListBox->FindStringExact(camname);
 		cameraNameLabel->Text = camThread->getCameraDriverName();	
 	}
 	void Form1::selectPreviousImage(int stepsBack){

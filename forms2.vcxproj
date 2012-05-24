@@ -86,6 +86,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Reference Include="Interop.WINX32Lib, Version=3.11.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>PI\Interop.WINX32Lib.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
       <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
@@ -126,11 +129,6 @@
     </Reference>
     <Reference Include="Interop.VBA, Version=6.0.0.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>PI\Interop.VBA.dll</HintPath>
-      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
-      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
-    </Reference>
-    <Reference Include="Interop.WINX32Lib, Version=3.11.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>PI\Interop.WINX32Lib.dll</HintPath>
       <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
       <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
     </Reference>

@@ -11,11 +11,15 @@ using namespace System;
 namespace forms2{
 	WinXDriver::WinXDriver(void)
 	{
+			//try{
+		/*
 			objApp=gcnew Winx32AppClass();
 			objWins=gcnew DocWindowsClass();	
 
 			objExp = gcnew ExpSetupClass();
 			ROIRect = (ROIRectClass^) objExp->GetROI(1);
+			//}catch (Ex
+		*/
 	}
 	int WinXDriver::initCamera()
 	{
@@ -29,9 +33,15 @@ namespace forms2{
 		*/
 		int err=0;
 		try{
+			objApp=gcnew Winx32AppClass();
+			objWins=gcnew DocWindowsClass();	
+			objExp = gcnew ExpSetupClass();
+			ROIRect = (ROIRectClass^) objExp->GetROI(1);
+
 			objExp->Start(objDoc1);
 			objExp->Stop();
-		}catch (System::Runtime::InteropServices::COMException ^e){
+		//}catch (System::Runtime::InteropServices::COMException ^e){
+		}catch (Exception ^e){
 			err = 1;		
 		}
 		if (!err){
