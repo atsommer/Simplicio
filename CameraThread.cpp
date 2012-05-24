@@ -53,12 +53,18 @@ namespace forms2{
 		
 		if (camname->Equals(gcnew String(L"Sensicam"))){
 			newdriver = (Driver ^)gcnew SencamDriver();//Driver REF
+		}else if (camname->Equals(gcnew String(L"No Camera"))){
+			newdriver = (Driver ^)gcnew TestDriver();
 		}else if (camname->Equals(gcnew String(L"SC2 Cam"))){
 			//newdriver = (Driver ^)gcnew SC2Driver();//Driver REF
 			MessageBox::Show("Pixelfly not yet supported.","Simplicio",MessageBoxButtons::OK);
 		}else if (camname->Equals(gcnew String(L"Princeton Instruments (WinView)"))){
+			try{
 			newdriver = (Driver ^)gcnew WinXDriver();
-			//MessageBox::Show("Princeton Instruments not yet supported.","Simplicio",MessageBoxButtons::OK);
+			}catch (Exception ^e){
+				newdriver=nullptr;
+				MessageBox::Show("Couldn't connect to WinView.","Simplicio",MessageBoxButtons::OK);
+			}
 		}else{
 			MessageBox::Show("Unsupported camera type requested.","Simplicio",MessageBoxButtons::OK);
 		}

@@ -12,12 +12,13 @@ namespace forms2{
 	using namespace System::Threading;
 	//using namespace System::IO;
 	using namespace DataStructures;
-
+	
 	ref class SimplicioServer;
 	ref class CameraThread;
 	ref class ImageThread;
 	ref class ImageData;
 	class CameraSettings;
+	
 	/// <summary>
 	/// Summary for Form1
 	///
@@ -29,6 +30,7 @@ namespace forms2{
 	/// </summary>
 	public ref class Form1 : public System::Windows::Forms::Form
 	{
+	
 	public:
 		Form1(void)
 		{
@@ -437,11 +439,12 @@ namespace forms2{
 			// cameraListBox
 			// 
 			this->cameraListBox->FormattingEnabled = true;
-			this->cameraListBox->Items->AddRange(gcnew cli::array< System::Object^  >(3) {L"Sensicam", L"SC2 Cam", L"Princeton Instruments (WinView)"});
+			this->cameraListBox->Items->AddRange(gcnew cli::array< System::Object^  >(3) {L"No Camera", L"Sensicam", L"Princeton Instruments (WinView)"});
 			this->cameraListBox->Location = System::Drawing::Point(59, 170);
 			this->cameraListBox->Name = L"cameraListBox";
 			this->cameraListBox->Size = System::Drawing::Size(242, 56);
 			this->cameraListBox->TabIndex = 28;
+			this->cameraListBox->SelectedIndex = 0;
 			this->cameraListBox->SelectedIndexChanged += gcnew System::EventHandler(this, &Form1::cameraListBox_SelectedIndexChanged);
 			// 
 			// cameraNameLabel

@@ -16,7 +16,7 @@ namespace forms2{
 		virtual int getImageWidth() override;
 		virtual int getImageHeight() override;
 		virtual void readImage(UInt16 *buffer) override;
-		virtual String^ getDriverName() override {return gcnew String("Test Driver");}
+		virtual String^ getDriverName() override {return gcnew String("No Camera");}
 		virtual int armCamera() override;
 
 		//settings
