@@ -1,0 +1,15 @@
+Deleted dependencies
+
+C/C++ Additional Include Directories
+C:\Program Files\Digital Camera Toolbox\SensiCam SDK
+C:\Program Files\Digital Camera Toolbox\pco.sdk\include
+
+Linker Additional Library Directories
+C:\Program Files\Digital Camera Toolbox\SensiCam SDK
+C:\Program Files\Digital Camera Toolbox\pco.sdk\lib
+
+Linker Input
+PCO_something.lib
+SC2_something.lib
+
+Senntcam.lib

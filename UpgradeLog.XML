@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="forms2">
+</Property><Property Name="Solution File" Value="D:\Research\Software\Simplicio2\forms2.sln">
+</Property><Property Name="Date" Value="Wednesday, May 23, 2012">
+</Property><Property Name="Time" Value="18:41 PM">
+</Property></Properties><Event ErrorLevel="0" Project="forms2" Source="forms2.vcproj" Description="Converting project file 'D:\Research\Software\Simplicio2\forms2.vcproj'.">
+</Event><Event ErrorLevel="1" Project="forms2" Source="forms2.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="1" Project="forms2" Source="forms2.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="forms2" Source="forms2.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="forms2" Source="forms2.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="forms2" Source="forms2.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="forms2" Source="forms2.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="forms2" Source="forms2.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="forms2" Source="forms2.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="forms2" Source="forms2.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="forms2" Source="forms2.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="forms2" Source="forms2.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="forms2" Source="forms2.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="forms2" Source="forms2.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="forms2" Source="forms2.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="forms2" Source="forms2.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="forms2" Source="forms2.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="forms2" Source="forms2.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="forms2" Source="forms2.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="forms2" Source="forms2.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="forms2" Source="forms2.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="forms2" Source="forms2.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="forms2" Source="forms2.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="forms2" Source="forms2.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="forms2" Source="forms2.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="forms2" Source="forms2.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="forms2" Source="forms2.vcproj" Description="Done converting to new project file 'D:\Research\Software\Simplicio2\forms2.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="forms2" Source="forms2.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="forms2.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="forms2.sln" Description="Converted">
+</Event></UpgradeLog>
