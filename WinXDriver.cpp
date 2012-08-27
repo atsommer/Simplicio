@@ -168,12 +168,13 @@ namespace forms2{
 			double top, left, bottom, right;
 			int xg,yg;		
 			ROIRect->Get(top,left,bottom,right,xg,yg);
-			roix1 = (int) top;
-			roiy1 = (int) left;
+			roix1 = (int) left;
+			roiy1 = (int) top;
 			roix2 = (int) right;
 			roiy2 = (int) bottom;
 			hbin = xg;
 			vbin = yg;
+			//MessageBox::Show(String::Format("y1={0}, y2={1}",roiy1,roiy2));
 			//Int32^ w32 = hbin;
 			//MessageBox::Show(w32->ToString(),"hbin",MessageBoxButtons::OK);
 		}

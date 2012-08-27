@@ -295,7 +295,7 @@ namespace forms2{
 				int height = driver->getImageHeight();
 
 				if (width != cols || height != dbl*rows){//or if width>cols etc
-					MessageBox::Show("Wrong dimensions in transfered image","Box",MessageBoxButtons::OK);break;}
+					MessageBox::Show(String::Format("Wrong dimensions in transfered image. Rows= {0}, Height = {1}",rows, height),"Box",MessageBoxButtons::OK);break;}
 				else{				
 					int bufInd = lay*width*height;
 					driver->readImage(buf+bufInd);
