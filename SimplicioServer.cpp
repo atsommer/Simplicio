@@ -10,6 +10,7 @@ namespace forms2{
 	using namespace System::Runtime::Remoting::Channels::Tcp;
 	SimplicioServer::SimplicioServer(Form1^ f){
 		mainForm=f;
+		serverName = gcnew String("Simplicio Server");
 		setNextTimeMainForm = gcnew DelegateTime(f,&Form1::setNextTime);
 		seqStartedMainForm = gcnew DelegateVars(f,&Form1::sequenceStarted);
 		connect();	
@@ -39,9 +40,12 @@ namespace forms2{
     {
         return gcnew List<HardwareChannel>();
     }
+	void SimplicioServer::setServerName(String^ name){
+		serverName  = name;
+	}
 	String^ SimplicioServer::getServerName()
     {
-        return "Simplicio Server";
+        return serverName;
     }
 
 	ServerSettingsInterface^ SimplicioServer::getServerSettings()

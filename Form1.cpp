@@ -55,8 +55,15 @@ namespace forms2{
 		camThread->initCamera();
 		camThread->setSave(false);
 		imgThread = gcnew ImageThread(this);
-
+		String^ sname = gcnew String("Simplicio Server");
+		setServerName(sname);
+		serverNameBox->Text = sname;
 		cameraNameLabel->Text = camThread->getCameraDriverName();
+	}
+	void Form1::setServerName(String^ name){
+		server->setServerName(name);
+		currentServerNameLabel->Text = server->getServerName();
+		//MessageBox::Show(server->getServerName());
 	}
 	bool Form1::isSingleFrame(){
 		return singleFrameCheckBox->Checked;

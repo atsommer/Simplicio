@@ -10,6 +10,7 @@ namespace forms2{
 
 		SimplicioServer(Form1^ f);
 		void connect();
+		void setServerName(String^ name);
 
         virtual bool armTasks() override;
 		virtual BufferGenerationStatus generateBuffers(int listIterationNumber) override;
@@ -34,6 +35,7 @@ namespace forms2{
 		Form1^ mainForm;
 		DelegateTime^ setNextTimeMainForm;
 		DelegateVars^ seqStartedMainForm;
+		String^ serverName;
 		//DateTime nextRunTime;
 	};
 }

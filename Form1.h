@@ -88,6 +88,9 @@ namespace forms2{
 	private: System::Windows::Forms::ListBox^  cameraListBox;
 	private: System::Windows::Forms::Label^  cameraNameLabel;
 	private: System::Windows::Forms::CheckBox^  singleFrameCheckBox;
+	private: System::Windows::Forms::TextBox^  serverNameBox;
+	private: System::Windows::Forms::Label^  label1;
+	private: System::Windows::Forms::Label^  currentServerNameLabel;
 
 
 
@@ -140,6 +143,9 @@ namespace forms2{
 			this->cameraListBox = (gcnew System::Windows::Forms::ListBox());
 			this->cameraNameLabel = (gcnew System::Windows::Forms::Label());
 			this->singleFrameCheckBox = (gcnew System::Windows::Forms::CheckBox());
+			this->serverNameBox = (gcnew System::Windows::Forms::TextBox());
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->currentServerNameLabel = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->layersBox))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->zoomBox))->BeginInit();
@@ -444,7 +450,6 @@ namespace forms2{
 			this->cameraListBox->Name = L"cameraListBox";
 			this->cameraListBox->Size = System::Drawing::Size(242, 56);
 			this->cameraListBox->TabIndex = 28;
-			this->cameraListBox->SelectedIndex = 0;
 			this->cameraListBox->SelectedIndexChanged += gcnew System::EventHandler(this, &Form1::cameraListBox_SelectedIndexChanged);
 			// 
 			// cameraNameLabel
@@ -467,11 +472,41 @@ namespace forms2{
 			this->singleFrameCheckBox->UseVisualStyleBackColor = true;
 			this->singleFrameCheckBox->CheckedChanged += gcnew System::EventHandler(this, &Form1::singleFrameCheckBox_CheckedChanged);
 			// 
+			// serverNameBox
+			// 
+			this->serverNameBox->Location = System::Drawing::Point(114, 824);
+			this->serverNameBox->Name = L"serverNameBox";
+			this->serverNameBox->Size = System::Drawing::Size(208, 20);
+			this->serverNameBox->TabIndex = 31;
+			this->serverNameBox->TextChanged += gcnew System::EventHandler(this, &Form1::serverNameBox_TextChanged);
+			this->serverNameBox->KeyUp += gcnew System::Windows::Forms::KeyEventHandler(this, &Form1::serverNameBox_KeyUp);
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Location = System::Drawing::Point(39, 831);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(69, 13);
+			this->label1->TabIndex = 32;
+			this->label1->Text = L"Server Name";
+			// 
+			// currentServerNameLabel
+			// 
+			this->currentServerNameLabel->AutoSize = true;
+			this->currentServerNameLabel->Location = System::Drawing::Point(111, 847);
+			this->currentServerNameLabel->Name = L"currentServerNameLabel";
+			this->currentServerNameLabel->Size = System::Drawing::Size(33, 13);
+			this->currentServerNameLabel->TabIndex = 33;
+			this->currentServerNameLabel->Text = L"name";
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1259, 981);
+			this->Controls->Add(this->currentServerNameLabel);
+			this->Controls->Add(this->label1);
+			this->Controls->Add(this->serverNameBox);
 			this->Controls->Add(this->singleFrameCheckBox);
 			this->Controls->Add(this->cameraNameLabel);
 			this->Controls->Add(this->cameraListBox);
@@ -521,6 +556,7 @@ namespace forms2{
 		void setNextTime(DateTime nextTime);
 		bool isSingleFrame();
 		String^ getSavePath();
+		void setServerName(String^ name);
 		//BufferedGraphicsContext^ getContext(){return context;}
 	private:
 		static const int IMAGE_HISTORY_LENGTH = 20;
@@ -608,6 +644,14 @@ private: System::Void cameraListBox_SelectedIndexChanged(System::Object^  sender
 		 }
 private: System::Void singleFrameCheckBox_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 			setSingleFrame(singleFrameCheckBox->Checked);
+		 }
+private: System::Void serverNameBox_TextChanged(System::Object^  sender, System::EventArgs^  e) {
+			// setServerName(serverNameBox->Text);
+		 }
+private: System::Void serverNameBox_KeyUp(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e) {
+			if (e->KeyCode == Keys::Enter){
+				setServerName(serverNameBox->Text);
+			}
 		 }
 };
 }
