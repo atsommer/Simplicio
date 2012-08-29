@@ -38,8 +38,11 @@ namespace forms2{
 			objExp = gcnew ExpSetupClass();
 			ROIRect = (ROIRectClass^) objExp->GetROI(1);
 
-			objExp->Start(objDoc1);
-			objExp->Stop();
+			objExp->Start(objDoc1);//creates a window for objDoc1. Also starts acquisition.
+			objExp->Stop(); //stops acquisition because we only wanted the window.
+			//objExp->Start(objDoc2);//creates a window for objDoc1. Also starts acquisition.
+			//objExp->Stop(); //stops acquisition because we only wanted the window.
+
 		//}catch (System::Runtime::InteropServices::COMException ^e){
 		}catch (Exception ^e){
 			err = 1;		
@@ -103,6 +106,7 @@ namespace forms2{
 	}
 	void WinXDriver::readImage(UInt16 *buffer)
 	{
+		DateTime starttime = DateTime::Now;
 		Object^ obFrame;//object to hold the array of data
 		objDoc1->GetFrame(1,obFrame);
 		Array^ arFrame = (Array^) obFrame;
@@ -118,6 +122,9 @@ namespace forms2{
 				pix = (Int16^) arFrame->GetValue(x,y);
 				buffer[x + y*cols]=*pix;
 			}
+		DateTime endtime = DateTime::Now;
+		long ticks = endtime.Ticks - starttime.Ticks;
+		//MessageBox::Show(String::Format("Read time: {0} ms",ticks/10000));
 	}
 	int WinXDriver::armCamera()
 	{
