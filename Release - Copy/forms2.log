@@ -1,0 +1,53 @@
+﻿Build started 8/29/2012 10:56:11 AM.
+     1>Project "C:\simplicio\Simplicio.git\forms2.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\forms2.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"SensiCam SDK" /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /O2 /Oy- /GL /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\forms2.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /FUC:\simplicio\Simplicio.git\DataStructures.dll /FUC:\simplicio\Simplicio.git\PI\Interop.KINETICSTOFRAMESLib.dll /FUC:\simplicio\Simplicio.git\PI\Interop.VBA.dll /FUC:\simplicio\Simplicio.git\PI\Interop.WINX32Lib.dll /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.DirectoryServices.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Runtime.Remoting.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt CameraThread.cpp Form1.cpp ImageThread.cpp SimplicioServer.cpp WinXDriver.cpp forms2.cpp /clr:nostdlib 
+         CameraThread.cpp
+         Form1.cpp
+         ImageThread.cpp
+         SimplicioServer.cpp
+         WinXDriver.cpp
+     1>WinXDriver.cpp(47): warning C4101: 'e' : unreferenced local variable
+     1>WinXDriver.cpp(126): warning C4244: 'initializing' : conversion from '__int64' to 'long', possible loss of data
+         forms2.cpp
+         All outputs are up-to-date.
+       CoreResGen:
+         "C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\resgen.exe" /useSourcePath /r:C:\simplicio\Simplicio.git\DataStructures.dll /r:C:\simplicio\Simplicio.git\PI\Interop.KINETICSTOFRAMESLib.dll /r:C:\simplicio\Simplicio.git\PI\Interop.VBA.dll /r:C:\simplicio\Simplicio.git\PI\Interop.WINX32Lib.dll /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.DirectoryServices.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Runtime.Remoting.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /compile Form1.resX,Release\forms2.Form1.resources
+         Processing resource file "Form1.resX" into "Release\forms2.Form1.resources".
+       ResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\simplicio\Simplicio.git\Release\forms2.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"SensiCam SDK" Senntcam.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /ASSEMBLYRESOURCE:Release\forms2.Form1.resources /MANIFEST /ManifestFile:"Release\forms2.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\simplicio\Simplicio.git\Release\forms2.pdb" /SUBSYSTEM:WINDOWS /LTCG /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Release\app.res
+         Release\AssemblyInfo.obj
+         Release\CameraSettings.obj
+         Release\CameraThread.obj
+         Release\Driver.obj
+         Release\FileThread.obj
+         Release\Form1.obj
+         Release\forms2.obj
+         Release\ImageData.obj
+         Release\ImageThread.obj
+         Release\SencamDriver.obj
+         Release\SimplicioServer.obj
+         Release\stdafx.obj
+         Release\TestDriver.obj
+         Release\WinXDriver.obj
+         "Release\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         Generating code
+         Finished generating code
+         forms2.vcxproj -> C:\simplicio\Simplicio.git\Release\forms2.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\simplicio\Simplicio.git\Release\forms2.exe;#1" /manifest Release\forms2.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\forms2.unsuccessfulbuild".
+         Touching "Release\forms2.lastbuildstate".
+     1>Done Building Project "C:\simplicio\Simplicio.git\forms2.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.72
