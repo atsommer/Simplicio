@@ -44,7 +44,7 @@ namespace forms2{
 			//objExp->Stop(); //stops acquisition because we only wanted the window.
 
 		//}catch (System::Runtime::InteropServices::COMException ^e){
-		}catch (Exception ^e){
+		}catch (Exception^){
 			err = 1;		
 		}
 		if (!err){
@@ -123,7 +123,7 @@ namespace forms2{
 				buffer[x + y*cols]=*pix;
 			}
 		DateTime endtime = DateTime::Now;
-		long ticks = endtime.Ticks - starttime.Ticks;
+		//long ticks = endtime.Ticks - starttime.Ticks;
 		//MessageBox::Show(String::Format("Read time: {0} ms",ticks/10000));
 	}
 	int WinXDriver::armCamera()

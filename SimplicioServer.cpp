@@ -23,7 +23,7 @@ namespace forms2{
 			ObjRef^ objRef  = RemotingServices::Marshal(this, "serverCommunicator"); 
 		}catch(Exception^){}
 	}
-	bool SimplicioServer::armTasks()
+	bool SimplicioServer::armTasks(UInt32 clockID)
 	{	
 		return true;
 	}
