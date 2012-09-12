@@ -9,10 +9,10 @@
 #include "SimplicioServer.h"
 //#using "DataStructures.dll"
 //using namespace System;
-//using namespace System::IO;
 //using namespace System::Threading;
 
 namespace forms2{
+	using namespace System::IO;
 	void Form1::InitProgram()
 	{	//list with "none" then add times
 		//cameraInited = false;
@@ -59,6 +59,26 @@ namespace forms2{
 		setServerName(sname);
 		serverNameBox->Text = sname;
 		cameraNameLabel->Text = camThread->getCameraDriverName();
+
+		//Load default folder name
+		String^ foldername;
+		String^ line;
+		try{
+			FileStream^ fs = File::Open("settings.txt",FileMode::OpenOrCreate);
+			StreamReader^ sr = gcnew StreamReader(fs);
+			do{
+				line = sr->ReadLine();
+				if (line->Contains("savefolder"))
+				{
+					int ind = line->IndexOf('=');
+					foldername = line->Remove(0,ind+1);
+					folderLabel->Text =  foldername;
+					line = nullptr;
+				}
+			} while (line!=nullptr);
+			sr->Close();
+			fs->Close();
+		}catch (Exception^){}
 	}
 	void Form1::setServerName(String^ name){
 		server->setServerName(name);
