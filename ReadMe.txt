@@ -4,9 +4,18 @@
 
 Visual Studio 2010 Version
 
+Compatible with Cicero 1.48, and hopefully 1.56.
+
+Uses the "old" version of ServerCommunicator::armTaks(), i.e. no parameter is passed.
+
+Use settings.txt to set default save folder
+
+
+
+
+
 AppWizard has created this forms2 Application for you.  
 
-An error has occurred. Please reinstall Windows for more information. 
 
 This file contains a summary of what you will find in each of the files that
 make up your forms2 application.

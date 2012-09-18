@@ -12,7 +12,7 @@ namespace forms2{
 		void connect();
 		void setServerName(String^ name);
 
-        virtual bool armTasks(UInt32 clockID) override;//need armTasks(UInt32 clockID);
+        virtual bool armTasks() override;//need armTasks(UInt32 clockID);
 		virtual BufferGenerationStatus generateBuffers(int listIterationNumber) override;
         virtual bool generateTrigger() override;
 		virtual List<HardwareChannel>^ getHardwareChannels() override;
